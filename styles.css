@@ -1,3 +1,10 @@
+html {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-family: 'Press Start 2P', cursive;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
 
 .insta-feeds-container {
     display: flex;
@@ -5,13 +12,13 @@
     justify-content: space-between;
     align-items: center;
     background-color: lightgrey;
+    margin-top: 0px;
+    padding-bottom: 30px;
 }
 
-.first-post {
-    background-color: red;
+.post {
     width: 500px;
-    margin: 10px;
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 .header {
@@ -44,6 +51,7 @@
 .rigoberto {
     display: block;
     margin: 0px;
+    font-size: 15px;
 }
 
 
@@ -54,11 +62,11 @@
     margin-top: 10px;
 }
 
-.photo {
+.post-img {
     height: 350px;
 }
 
-.photo img{
+.post-img img{
     width: 500px;
     height: 350px;
     margin-top: 0px;
@@ -74,14 +82,39 @@
 
 .post-body p {
     min-height: 30px;
-    justify-self: center;
+    justify-self: start;
     position: relative;
-    text-align: center;
+    text-align: start;
     padding: 15px;
     margin: 0;
 }
 
+.post-body p + p {
+    margin-top: 0;
+}
+
+
 .post-icons {
+    margin-top: 5px;
     height: 50px;
     width: 100%;
+    float: left;
 }
+
+.fa-heart, .fa-comment, .paper-plane {
+    margin: 5px;
+}
+
+.fa-heart {
+    margin-left: 15px;
+}
+
+
+.fa-bookmark {
+    float: right;
+    margin-right: 22px;
+    margin-top: 5px;
+}
+
+
+
